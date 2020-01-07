@@ -58,23 +58,34 @@ a {
     color: #d64441;
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.human {
-    width: 30%;
-    height: auto;
-    flex-shrink: 1;
-    margin: 1em;
+.item {
     border: 2px solid white;
+    width: 300px;
+    height: auto;
+    justify-items: center;
+    align-items: start;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    padding: 0;
+.itemthumb {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 200px;
+    grid-auto-rows: 200px;
+    justify-content: center;
+    align-content: start;
+    gap: 20px;
+}
+
+#minimalnye {
+    background-image: url(store/minimalnye.jpeg);
+}
+
+#minimalnye:hover {
+    background-image: url(store/minimalnye.gif);
 }

@@ -29,11 +29,6 @@ a.active {
     text-shadow: 0px 0px 10px white;
 }
 
-.intro {
-    background-image: url("HeaderImage.jpg");
-    background-size: cover;
-}
-
 h1 {
     text-align: center;
     color: white;
@@ -58,23 +53,27 @@ a {
     color: #d64441;
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+.profile {
+    width:40%;
+    padding: 10px;
+    border: 3px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
 }
 
-.human {
-    width: 30%;
-    height: auto;
-    flex-shrink: 1;
-    margin: 1em;
-    border: 2px solid white;
+.profile img{
+    width: auto;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    padding: 0;
+.quote {
+    border: 2px dotted #d64441;
+    color: white;
+    text-align: center;
+    padding: 1em;
 }
