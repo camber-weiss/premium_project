@@ -70,13 +70,14 @@ a {
     width: 200px;
     height: 200px;
     display: block;
+    justify-self: center;
 }
 
 .catalog {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows: 200px;
-    grid-auto-rows: 200px;
+    grid-template-columns: repeat(4, 400px);
+    grid-template-rows: 400px;
+    grid-auto-rows: 400px;
     justify-content: center;
     align-content: start;
     gap: 20px;
@@ -88,4 +89,10 @@ a {
 
 #minimalnye:hover {
     background-image: url(store/minimalnye.gif);
+}
+
+@media only screen and (max-width: 600px) {
+    .catalog {
+        grid-template-columns: 400px;
+    }
 }
