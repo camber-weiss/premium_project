@@ -75,20 +75,34 @@ a {
 
 .catalog {
     display: grid;
-    grid-template-columns: repeat(4, 400px);
-    grid-template-rows: 400px;
-    grid-auto-rows: 400px;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: 300px;
+    grid-auto-rows: 300px;
     justify-content: center;
     align-content: start;
     gap: 20px;
 }
 
-#minimalnye {
+.item {
     background-image: url(store/minimalnye.jpeg);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
-#minimalnye:hover {
+.item:hover {
     background-image: url(store/minimalnye.gif);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.hero-left {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.hero-right {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
 }
 
 @media only screen and (max-width: 600px) {
