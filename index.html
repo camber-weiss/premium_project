@@ -4,6 +4,7 @@
     <title>Humans of Phish</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Sulphur+Point:400,700&display=swap" rel="stylesheet">
+    <script src="jquery-3.4.1.js"></script>
 </head>
 <body>
     <div class="topnav">
@@ -17,9 +18,109 @@
         <h2>A photojournalism project highlighting the wonderful variety of Humans you might meet at a Phish concert</h2>
         <h3>Follow us on <a href="http://www.instagram.com/thehumansofphish">Instagram</a> and <a href="https://www.facebook.com/thehumansofphish/">Facebook</a> for the latest updates</h3>
     </div>
+    <div class="filterbox">
+        <div class="filterbutton">Filters</div>
+        <div class="filterdropdown">
+            <div class="gender filter">
+                <div class="filterselector" id="male">Male</div>
+                <div class="filterselector" id="female">Female</div>
+                <div class="filterselector" id="allgender">All</div>
+            </div>
+        </div>    
+    </div>
     <div class="flex-container" id="humans">
-        <div class="human">
-            <a href="humantemplate.html"><img src="humans/jaredmcdonnell13crop.jpg.jpg">
+        <div class="human group1 female">
+            <a href="humantemplate.html"><img src="humans/trixystarrcrop.jpg">
+            <div class="overlay">
+                <div class="overlaytext">
+                    "Phish is one element in my life that has grounded, healed, and inspired me since the sweet age of 17."<br>- @trixystarr
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="human group1 male">
+            <a href="humantemplate.html"><img src="humans/scottscrop.jpeg">
+            <div class="overlay">
+                <div class="overlaytext">
+                    "Music is my memory. When I think of a place or time, I recall it through the music I listened to from that moment."<br>- @scott_rothenberg
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="human group1 male">
+            <a href="humantemplate.html"><img src="humans/cambercrop.jpg">
+            <div class="overlay">
+                <div class="overlaytext">
+                    "To me, Phish is a microcosm: something small that embodies the epitome of the cosmos."<br>- @camber
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="human group1 female">
+            <a href="humantemplate.html"><img src="humans/realstoophcrop.jpg">
+            <div class="overlay">
+                <div class="overlaytext">
+                    "I’ve ebbed and flowed year to year from consistently going to shows, but every time I do, it’s a reminder of how beautiful and special Phish is."<br>- @therealstooph
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="human group1 male">
+            <a href="humantemplate.html"><img src="humans/mykecrop.jpeg">
+            <div class="overlay">
+                <div class="overlaytext">
+                    "Why do I wear a helmet? It's simple — because I like to party."<br>- Myke of The Daily Soundcheck
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="human group1 female">
+            <a href="humantemplate.html"><img src="humans/jhopemorriscrop.jpg">
+            <div class="overlay">
+                <div class="overlaytext">
+                    "Phish makes me feel both giggly and somber, sentimental and silly, reflective of myself and filled with love for all the humans around me"<br>- @jhopemorris
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="human group1 male">
+            <a href="humantemplate.html"><img src="humans/jvpopecrop.jpg">
+            <div class="overlay">
+                <div class="overlaytext">
+                    "Fishman has influenced my playing so heavily that I sometimes have to actively try not to play like him."<br>- @jvpope
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="human group1 female">
+            <a href="humantemplate.html"><img src="humans/karenportercrop.jpg">
+            <div class="overlay">
+                <div class="overlaytext">
+                    "Phish feeds our souls in unimaginable ways, and continues to connect us all in ways that only a Phish fan can understand."<br>- Karen Davis Porter
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="human group1 female">
+            <a href="humantemplate.html"><img src="humans/phunkygratefulcrop.jpg">
+            <div class="overlay">
+                <div class="overlaytext">
+                    "Phish has changed my entire life for the better. Everything falls perfectly into place for me when seeing them"<br>- @phunky_grateful
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="human group2 male">
+            <a href="humantemplate.html"><img src="humans/alinkcrop.jpeg">
+            <div class="overlay">
+                <div class="overlaytext">
+                    "My first Phish memory is making fun of my sister for listening to a song with lyrics about ‘tires making contact with the road’"<br>- @alink2
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="human group2 male">
+            <a href="humantemplate.html"><img src="humans/jaredmcdonnell13crop.jpg">
             <div class="overlay">
                 <div class="overlaytext">
                     "This experience we all share has created a beautiful community"<br>- @jaredmcdonnell13
@@ -27,7 +128,7 @@
             </div>
             </a>
         </div>
-        <div class="human">
+        <div class="human group2 female">
             <a href="humantemplate.html"><img src="humans/flyphishercrop.jpg">
             <div class="overlay">
                 <div class="overlaytext">
@@ -36,16 +137,16 @@
             </div>
             </a>
         </div>
-        <div class="human">
+        <div class="human group2 female">
             <a href="humantemplate.html"><img src="humans/pilikikacrop.jpg">
             <div class="overlay">
                 <div class="overlaytext">
-                    "I've never more collective love from one group of people than at a Phish show"<br>- @pilikika__
+                    "I've never seen more collective love from one group of people than at a Phish show"<br>- @pilikika__
                 </div>
             </div>
             </a>
         </div>
-        <div class="human">
+        <div class="human group2 male">
             <a href="humantemplate.html"><img src="humans/apsmithcrop.jpeg">
             <div class="overlay">
                 <div class="overlaytext">
@@ -54,7 +155,7 @@
             </div>
             </a>
         </div>
-        <div class="human">
+        <div class="human group2 female">
             <a href="humantemplate.html"><img src="humans/juliacrop.jpg">
             <div class="overlay">
                 <div class="overlaytext">
@@ -63,7 +164,7 @@
             </div>
             </a>
         </div>
-        <div class="human">
+        <div class="human group2 male">
             <a href="humantemplate.html"><img src="humans/paddyry18_crop.jpg">
             <div class="overlay">
                 <div class="overlaytext">
@@ -72,7 +173,7 @@
             </div>
             </a>
         </div>
-        <div class="human">
+        <div class="human group2 female">
             <a href="catpalmtree.html"><img src="humans/catpalmtree_crop.jpg">
             <div class="overlay">
                 <div class="overlaytext">
@@ -81,7 +182,7 @@
             </div>
             </a>
         </div>
-        <div class="human">
+        <div class="human group2 female">
             <a href="humantemplate.html"><img src="humans/beckymayyy_crop.jpg"></a>
             <div class="overlay">
                 <div class="overlaytext">
@@ -91,6 +192,7 @@
             </a>
         </div>
     </div>
-    </body>
+    <div class="showmore">Show More</div>
+    <script src="indexscript.js"></script>
 </body>
 </html>
